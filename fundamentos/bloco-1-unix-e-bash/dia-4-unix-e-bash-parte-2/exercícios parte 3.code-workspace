@@ -1,0 +1,9 @@
+ps
+sleep 30 &
+kill (número do PID de sleep 30)
+sleep 30; ctrl z; bg
+sleep 300 &
+sleep 200; ctrl z; sleep 100, ctrl z;
+jobs; fg %(número do processo sleep 300); ctrl z
+bg %(número do processo sleep 100)
+kill %(número do processo)
