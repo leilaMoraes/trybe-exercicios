@@ -11,7 +11,7 @@
   }
   
   .baloon {
-  margin-left: 50px;
+  margin-left: 250px;
   position: absolute;
   z-index: 1;
   }
@@ -26,4 +26,7 @@
   
   .bowser {
     width: 200px;
+    margin-top: 120px;
+    float: right;
+    margin-right: 1100px;
   }
