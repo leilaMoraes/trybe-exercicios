@@ -17,3 +17,11 @@ let lenght = numbers.length
 let sum = numbers[0] + numbers[1] + numbers[2] + numbers[3] + numbers[4] + numbers[5] + numbers[6] + numbers[7] + numbers[8] + numbers[9]
 
 console.log(sum / lenght);
+
+// Exercício 4
+
+if (sum / lenght > 20){
+    console.log("valor maior que 20")
+} else {
+    console.log("valor menor ou igual a 20")
+}
