@@ -1,6 +1,6 @@
 // Array que será utilizado nos exercícios do 1 ao 7
 
-let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+//let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 
 // Exercício 1
 
@@ -14,7 +14,7 @@ console.log(numbers[0] + numbers[1] + numbers[2] + numbers[3] + numbers[4] + num
 // Exercício 3
 
 let lenght = numbers.length
-let sum = numbers[0] + numbers[1] + numbers[2] + numbers[3] + numbers[4] + numbers[5] + numbers[6] + numbers[7] + numbers[8] + numbers[9]
+//let sum = numbers[0] + numbers[1] + numbers[2] + numbers[3] + numbers[4] + numbers[5] + numbers[6] + numbers[7] + numbers[8] + numbers[9]
 
 console.log(sum / lenght);
 
@@ -25,3 +25,15 @@ if (sum / lenght > 20){
 } else {
     console.log("valor menor ou igual a 20")
 }
+
+// Exercício 5
+
+let max = 0;
+
+for (let index = 0; index < numbers.length; index += 1){
+    if (numbers[index] > max){
+        max = numbers[index]
+    }       
+}
+console.log(max);
+
