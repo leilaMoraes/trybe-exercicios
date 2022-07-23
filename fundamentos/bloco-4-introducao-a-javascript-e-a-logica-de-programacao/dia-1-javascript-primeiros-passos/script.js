@@ -147,4 +147,34 @@ if (custo >= 0 && venda >= 0){
 
 // Exercício 11
 
+let salarioBruto = 3000;
+let descontoInss;
+let descontoIr;
+
+if (salarioBruto <= 1556.94){
+    descontoInss = salarioBruto - salarioBruto * 0.08
+} else if (salarioBruto <= 2594.92){
+    descontoInss = salarioBruto - salarioBruto * 0.09
+} else if (salarioBruto <= 5189.82){
+    descontoInss = salarioBruto - salarioBruto * 0.11
+} else {
+    descontoInss = salarioBruto - 570.88
+}
+
+    if (descontoInss <= 1903.98){
+        descontoIr = 0
+    } else if (descontoInss <= 2826.65){
+        descontoIr = descontoInss * 0.075 - 142.8;
+    } else if (descontoInss <= 3751.05){
+        descontoIr = descontoInss * 0.15 - 354.80
+    } else if ( descontoInss <= 4664.68){
+        descontoIr = descontoInss * 0.225 - 636.13
+    } else {
+        descontoIr = descontoInss * 0.275 - 869.36
+    }
+
+let salarioLiquido = descontoInss - descontoIr    
+    
+console.log (salarioLiquido)
+
 
