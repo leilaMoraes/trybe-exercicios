@@ -11,12 +11,24 @@ console.log(numbers);
 console.log(numbers.length);
 console.log(numbers[0] + numbers[1] + numbers[2] + numbers[3] + numbers[4] + numbers[5] + numbers[6] + numbers[7] + numbers[8] + numbers[9]);
 
+// Forma melhor de fazer o exercício 2
+
+//let sum = 0;
+
+//for (let index = 0; index < numbers.length; index += 1){
+//	sum += numbers[index]
+//}
+//console.log(sum)
+
 // Exercício 3
 
 let lenght = numbers.length
-//let sum = numbers[0] + numbers[1] + numbers[2] + numbers[3] + numbers[4] + numbers[5] + numbers[6] + numbers[7] + numbers[8] + numbers[9]
+let sum = numbers[0] + numbers[1] + numbers[2] + numbers[3] + numbers[4] + numbers[5] + numbers[6] + numbers[7] + numbers[8] + numbers[9]
 
 console.log(sum / lenght);
+
+// Forma melhor de fazer o exercício 3
+// repetir o let lenght e o console somente, porque com o que foi feito no exercício anterior já dá para obter o resultado.
 
 // Exercício 4
 
@@ -71,3 +83,13 @@ for (let index = 1; index <= 25; index += 1){
     array += index + ", ";
 }
 console.log(array);
+
+// Exercício 9
+
+let array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25]
+let division = 0;
+
+for (let index = 0; index < array.length; index += 1){
+    division = array[index] / 2;
+    console.log(division)
+}
