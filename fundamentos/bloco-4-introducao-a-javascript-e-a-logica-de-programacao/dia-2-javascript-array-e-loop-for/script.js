@@ -50,6 +50,15 @@ for (let index = 0; index < numbers.length; index += 1){
         console.log(oddNumbers)
 }   else {    
         console.log("nenhum valor ímpar encontrado")
-}     
- 
+}  
 
+// Exercício 7
+
+let min = 100;
+
+for (let index = 0; index < numbers.length; index += 1){
+    if (numbers[index] < min){
+        min = numbers[index]
+    }       
+}
+console.log(min);
