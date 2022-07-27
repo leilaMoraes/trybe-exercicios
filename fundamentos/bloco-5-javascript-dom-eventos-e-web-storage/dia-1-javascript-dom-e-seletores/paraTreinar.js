@@ -4,4 +4,4 @@ document.getElementById("second-paragraph").innerText = "Em meio a preparativos 
 
 document.getElementById("subtitle").innerText = "Ano da Formatura"
 
-document.getElementsByClassName("paragraphs");
+document.getElementsByClassName('paragraphs')[0].style.color = 'green';
