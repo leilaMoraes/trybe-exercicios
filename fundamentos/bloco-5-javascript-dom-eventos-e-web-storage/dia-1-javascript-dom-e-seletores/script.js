@@ -8,5 +8,4 @@ document.getElementsByClassName('title')[0].innerText = 'Exercício 5.1 - JavaSc
 
 document.getElementsByTagName('p')[0].innerText = 'Texto padrão do nosso site'.toUpperCase();
 
-
-
+console.log(document.getElementById('paragraphs').innerText);
