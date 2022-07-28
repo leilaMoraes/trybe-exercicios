@@ -6,3 +6,7 @@ document.getElementsByClassName('center-content')[0].style.backgroundColor = 'wh
 
 document.getElementsByClassName('title')[0].innerText = 'Exercício 5.1 - JavaScript';
 
+document.getElementsByTagName('p')[0].innerText = 'Texto padrão do nosso site'.toUpperCase();
+
+
+
