@@ -1,11 +1,13 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(197, 195, 198);
+    background-color: rgb(252, 247, 255);
 }
 
 fieldset {
-    background-color: rgb(220, 220, 221);
+    background-color: rgb(196, 202, 208);
     border-radius: 25px;
+    width: 80%;
+    margin: auto;
 }
 
 h1 {
@@ -58,4 +60,15 @@ button {
     padding: 10px 50px;
     border-radius: 10px;
     border-color: gray;
+}
+
+#submit-btn {
+    margin-left: 9%;
+    background-color: rgb(180, 185, 188);
+    font-size: medium;
+}
+
+#apaga-btn {
+    background-color: rgb(166, 173, 177);
+    font-size: medium;
 }

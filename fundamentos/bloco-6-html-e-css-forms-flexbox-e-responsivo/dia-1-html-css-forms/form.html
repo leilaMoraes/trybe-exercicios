@@ -10,47 +10,47 @@
  
   <body>
     <header><h1>TrybeTrip</h1></header>
-
+   
    <fieldset>
       
     <form action="" method="GET">
 
       <div class="inicio">
       <label for="nome-completo">Nome:</label>
-      <input type="text" name="nome-completo" required placeholder="Digite seu nome completo" minlength="10" maxlength="40" id="nome-completo" />
+      <input type="text" name="nome-completo"  placeholder="Digite seu nome completo" minlength="10" maxlength="40" id="nome-completo" />
 
       <br>
       <label for="usuario">Email:</label>
-      <input type="email" required placeholder="Digite seu email" minlength="10" maxlength="50"id="usuario"/>
+      <input type="email" placeholder="Digite seu email" minlength="10" maxlength="50"id="usuario"/>
       </div>
 
       <div class="seletores">
             <legend>Destino Favorito</legend>
             <label for="destino-1">
-               <input type="radio"   name="destino-preferido" value="campo" required checked id="destino-1"/>Campo
+               <input type="radio"   name="destino-preferido" value="campo" checked id="destino-1"/>Campo
             </label>   
 
             <label for="destino-2">
-               <input type="radio"   name="destino-preferido" value="cidade" required id="destino-2"/>Cidade
+               <input type="radio"   name="destino-preferido" value="cidade" id="destino-2"/>Cidade
             </label>  
 
             <label for="destino-3">
-               <input type="radio"   name="destino-preferido" value="montanha" required id="destino-3"/>Montanha
+               <input type="radio"   name="destino-preferido" value="montanha" id="destino-3"/>Montanha
             </label>   
 
             <label for="destino-4">
-               <input type="radio"   name="destino-preferido" value="praia" required id="destino-4"/>Praia
+               <input type="radio"   name="destino-preferido" value="praia" id="destino-4"/>Praia
             </label>
       </div>
      
       <div id="texto-grande">
       <label for="motivos-vencer"> Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</label>
-      <textarea name="motivos"  cols="30" rows="10" placeholder="Motivos para ganhar a viagem" maxlength="500" required id="motivos-vencer"></textarea>
+      <textarea name="motivos"  cols="30" rows="10" placeholder="Motivos para ganhar a viagem" maxlength="500" id="motivos-vencer"></textarea>
       </div>
 
       <div>
       <label for="data">Data:</label>
-      <input type="date" required id="data"/>
+      <input type="date" id="data"/>
       </div>
 
       <div class="seletores">
@@ -58,16 +58,17 @@
       <label for="checkbox-propaganda">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe? </label>
 
       <br>
-      <input type="checkbox" name="autorização-de-imagem" id="checkbox-autorizacao"/>
+      <input type="checkbox" name="autorização-de-imagem" required id="checkbox-autorizacao"/>
       <label for="checkbox-autorizacao">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros. </label>
       </div>
       </fieldset>
 
-      <button type="submit">Enviar</button>
-     
-      <button>Apagar</button>
-    
-      <script src="script.js"></script>
+      <div>
+      <button type="submit" id="submit-btn" >Enviar</button>
+      <button type="reset" id="apaga-btn">Apagar</button>
+      </div>
+      
    </form>
+   <script src="script.js"></script>
   </body>
 </html>
