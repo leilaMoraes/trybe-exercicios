@@ -20,6 +20,17 @@ h1, h3 {
   width: 70px;
 }
 
+.first-section {
+  display: flex;
+  padding: 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  font-size: larger;
+} 
+
 .gallery-img {
   width: 150px;
 }
