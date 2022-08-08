@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Ubuntu';
+}
+
+header {
+  background-color: rgb(50, 52, 51);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+h1, h3 {
+  color: rgb(228, 234, 233);
+}
+
+.header-img {
+  width: 70px;
+}
+
+.first-section {
+  display: flex;
+  padding: 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  font-size: larger;
+} 
+
+.gallery-img {
+  width: 150px;
+}
+
+.social-img {
+  width: 25px;
+  margin-left: 10px;
+}
