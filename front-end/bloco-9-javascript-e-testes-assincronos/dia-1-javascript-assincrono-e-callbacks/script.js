@@ -66,3 +66,18 @@ const jupiter = {
 console.log(planetDistanceFromSun(mars)); // A primeiro
 setTimeout(() => console.log(planetDistanceFromSun(venus)), 3000); // B terceiro
 setTimeout(() => console.log(planetDistanceFromSun(jupiter)), 2000); // C segundo
+
+//Exercício 3
+
+const getPlanet = () => {
+  const mars = {
+    name: 'Mars',
+    distanceFromSun: {
+      value: 227900000,
+      measurementUnit: 'kilometers',
+    },
+  };
+  setTimeout(() => console.log('Returned planet: ', mars), 4000);
+};
+
+getPlanet();
