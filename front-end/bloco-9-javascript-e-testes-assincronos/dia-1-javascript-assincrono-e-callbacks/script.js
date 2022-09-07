@@ -216,3 +216,19 @@ const handlePokemonSearch = (error, message) => {
 };
 
 getPokemonDetails(/* selectedPokemon*/, handlePokemonSearch);
+
+//Exercício 8
+
+beforeEach(() => console.log('1 - beforeEach'));
+afterEach(() => console.log('1 - afterEach'));
+
+test('', () => console.log('1 - test'));
+
+describe('Scoped / Nested block', () => {
+  beforeEach(() => console.log('2 - beforeEach'));
+  afterEach(() => console.log('2 - afterEach'));
+
+  test('', () => console.log('2 - test'));
+});
+
+//Acho que primeiro será consolado o beforEach, depois o test, depois o afterEach, depois o beforeEach de novo, o bloco describe todo e o afterEach.
