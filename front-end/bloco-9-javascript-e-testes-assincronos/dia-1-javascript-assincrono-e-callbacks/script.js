@@ -156,13 +156,13 @@ const handleError = (errorReason) =>
 
 const sendMarsTemperature = (success, notSuccess) => {
   setTimeout(() => {
-    const didOperationSucceed = Math.random() >= 0.6;
+    const didOperationSucceed = Math.random() <= 0.6; //corrigido o sinal de > para < pq da forma que eu fiz antes, acho q estava sendo interpretado como menor que 60%, bem q eu estranhei q dava mais errado do q certo. rsrs.
     if (didOperationSucceed){
     const degrees = getMarsTemperature();
     return success(degrees);
     } else {
-      const errorMessage = handleError('Robot is busy');
-      return notSuccess(errorMessage);
+      return notSuccess('Robot is busy');
+      //corrigido, pois colocando na constante tava retornando mensagem de erro a mais
     }
   }, messageDelay())
 }
