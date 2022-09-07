@@ -232,3 +232,4 @@ describe('Scoped / Nested block', () => {
 });
 
 //Acho que primeiro será consolado o beforEach, depois o test, depois o afterEach, depois o beforeEach de novo, o bloco describe todo e o afterEach.
+//Depois de olhar o gabarito que eu reparei direito que tem um beforeEach e um afterEach dentro do Describe, então, será consolado o beforeEach e o afterEach dentro do describe tbm, além de do lado de fora
