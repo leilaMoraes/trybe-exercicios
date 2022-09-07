@@ -68,6 +68,7 @@ setTimeout(() => console.log(planetDistanceFromSun(venus)), 3000); // B terceiro
 setTimeout(() => console.log(planetDistanceFromSun(jupiter)), 2000); // C segundo
 
 //Exercício 3
+// Acrescentei o setTimeout no console.log
 
 const getPlanet = () => {
   const mars = {
@@ -91,10 +92,42 @@ const getMarsTemperature = () => {
   return Math.floor(Math.random() * maxTemperature);
 };
 
+// Função que eu criei
+
 const sendMarsTemperature = () => {
 const delay = messageDelay();
 const temperature = getMarsTemperature();
-setTimeout(() => console.log(`A temperatura de Marte é: ${temperature} graus Celsius`), delay);
+setTimeout(() => console.log(`A temperatura de Marte é: ${temperature} graus celsius`), delay);
 };
 
 sendMarsTemperature();
+
+//Exercício 5
+
+const messageDelay = () => Math.floor(Math.random() * 5000);
+
+const getMarsTemperature = () => {
+  const maxTemperature = 58;
+  return Math.floor(Math.random() * maxTemperature);
+};
+
+const toFahrenheit = (degreeCelsius) => (degreeCelsius * (9 / 5)) + 32;
+
+const temperatureInFahrenheit = (temperature) =>
+  console.log(`Atualmente está ${toFahrenheit(temperature)}ºF em Marte`);
+
+const greet = (temperature) =>
+  console.log(`Olá! Curiosity aqui. Nesse momento está ${temperature}ºC em Marte`);
+
+// Função que eu criei
+
+const sendMarsTemperature = (callback) => {
+  setTimeout(() => {
+    const degrees = getMarsTemperature();
+    return callback(degrees);
+  }, messageDelay())
+}
+
+sendMarsTemperature(temperatureInFahrenheit);
+
+sendMarsTemperature(greet);
