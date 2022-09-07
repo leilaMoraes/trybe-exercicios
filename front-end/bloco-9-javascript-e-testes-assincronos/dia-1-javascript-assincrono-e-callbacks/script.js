@@ -208,10 +208,10 @@ function getPokemonDetails(selectedPokemon, callback) {
 }
 
 const handlePokemonSearch = (error, message) => {
-  if (error === null) {
-    console.log(message);
-  } else {
+  if (error) { //descobri pelo gabarito que era mais simples ainda do que eu pensei
     console.log(error);
+  } else {
+    console.log(message);
   }
 };
 
